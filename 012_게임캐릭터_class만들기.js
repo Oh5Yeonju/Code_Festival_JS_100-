@@ -20,7 +20,7 @@ console.log(y.health, y.mana, y.armor)
 x.attack()
 y.attack()
 
-// 코드를 다음과 같이 수정했더니 [object Object]의 파이어볼 공격이라는 값이 출력되었습니다. 
+// 다음 데이터에서 변수의 이름만 출력하고 싶으면 방법은? 
 
 class Wizard {
     constructor(health, mana, armor) {
@@ -29,6 +29,6 @@ class Wizard {
         this.armor = armor;
     }
     attack() {
-        console.log(`${this}의 파이어볼 공격`)
+        console.log(`${JSON.stringify(this)}의 파이어볼 공격`)
     }
 }
